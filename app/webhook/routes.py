@@ -18,11 +18,6 @@ def receive_event():
     # FIX 2: action only exists for certain events(pull_request, issues, etc.)
     action = payload.get("action")
 
-    # Handle ping safely
-    # if event_type == "ping":
-    #     print("✅ GitHub ping received")
-    #     return jsonify({"status": "ok"}), 200
-
     doc = None
 
     # Push event
